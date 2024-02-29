@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -15,7 +15,7 @@ print(aienv)
 #Telegram bot key
 tgenv = os.getenv('TELEGRAM_KEY')
 if tgenv == None:
-    tgkey = "ENTER YOUR TELEGRAM TOKEN HERE"
+    tgkey = "6638012752:AAGQ7Tr8n3QLucoUBQNTOUnJ2C0eG4E4Ezs"
 else:
     tgkey = tgenv
 print(tgenv)
@@ -33,8 +33,8 @@ running = False
 cache = None
 qcache = None
 chat_log = None
-botname = 'Harshit ethic'
-username = 'harshitethic_bot'
+botname = 'Lucifer Leech Bot'
+username = 'LucisLeech_Bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
 max = int(3000)
 
@@ -64,8 +64,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Lucifer Leech Bot'
+        username = 'LucisLeech_Bot'
         update.message.reply_text('Hi')
         return 
     else:
@@ -91,16 +91,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Lucifer Leech Bot'
+        username = 'LucisLeech_Bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Lucifer Leech Bot'
+        username = 'LucisLeech_Bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
@@ -187,8 +187,8 @@ def wait(bot, update, botname, username, new):
                 cache = None
                 qcache = None
                 user = ""
-                username = 'harshitethic_bot'
-                botname = 'Harshit Ethic'
+                username = 'LucisLeech_Bot'
+                botname = 'Lucifer Leech Bot'
                 update.message.reply_text('Timer has run down, bot has been reset to defaults.')
                 running = False
     else:
